@@ -9,10 +9,8 @@ function NavBar() {
       >
         <div className="container-fluid">
           {/* Logo and link to the home page */}
-          <Link to="/">
-            <a className="navbar-brand" >
-              HABIT TRACKER💪
-            </a>
+          <Link to="/" className="navbar-brand">
+            HABIT TRACKER💪
           </Link>
           {/* Button for toggling the navbar on mobile devices */}
           <button
@@ -30,20 +28,16 @@ function NavBar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               {/* Navigation links */}
-              <NavLink to="/" end>
-                <li className="nav-item">
-                  <a className="nav-link" aria-current="page">
-                    Home
-                  </a>
-                </li>
-              </NavLink>
-              <NavLink to="/WeekList">
-                <li className="nav-item">
-                  <a className="nav-link">
-                    Week List
-                  </a>
-                </li>
-              </NavLink>
+              <li className="nav-item">
+                <NavLink to="/" className="nav-link" aria-current="page" end>
+                  Home
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/WeekList" className="nav-link">
+                  Week List
+                </NavLink>
+              </li>
             </ul>
             {/* Search form */}
             <form className="d-flex" role="search">
