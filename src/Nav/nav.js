@@ -10,7 +10,7 @@ function NavBar() {
         <div className="container-fluid">
           {/* Logo and link to the home page */}
           <Link to="/">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" >
               HABIT TRACKER💪
             </a>
           </Link>
@@ -32,14 +32,14 @@ function NavBar() {
               {/* Navigation links */}
               <NavLink to="/" end>
                 <li className="nav-item">
-                  <a className="nav-link" aria-current="page" href="#">
+                  <a className="nav-link" aria-current="page">
                     Home
                   </a>
                 </li>
               </NavLink>
               <NavLink to="/WeekList">
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link">
                     Week List
                   </a>
                 </li>
